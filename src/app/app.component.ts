@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {DarkModeService} from './dark-mode.service';
 
 @Component({
   selector: 'app-root',
@@ -6,14 +7,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  private _darkMode: boolean = false;
-  public readonly name: string = "Declan Herbertson";
-
-  public toggleDarkMode(): void {
-    this._darkMode = !this._darkMode;
-  }
-
-  public get darkMode(): boolean {
-    return this._darkMode;
+  constructor(public darkMode: DarkModeService) {
   }
 }

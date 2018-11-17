@@ -1,12 +1,6 @@
-<div class="application" [ngClass]="{'dark-mode': darkMode}">
-  <div [ngClass]="{'dark-mode': darkMode}" class="nav-bar">
-    <div>About</div>
-    <div>Projects</div>
-    <div>Experience</div>
-    <div (click)="toggleDarkMode()">Toggle Dark Mode</div>
+<div class="application" [ngClass]="{'dark-mode': darkMode.darkModeEnabled}">
+  <app-nav-bar></app-nav-bar>
+  <div [ngClass]="{'dark-mode': darkMode.darkModeEnabled}" class="main-body">
+    <router-outlet></router-outlet>
   </div>
-  <div [ngClass]="{'dark-mode': darkMode}" class="main-body">
-    <h1>{{name}}</h1>
-  </div>
-
 </div>

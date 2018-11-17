@@ -1,0 +1,48 @@
+@border-thickness: 2px;
+@border-color: #e72;
+
+.nav-option {
+  margin: 10px 0 10px 0;
+  outline: none;
+  position: relative;
+}
+
+
+//////// this css is used for the border magic
+.inner-content {
+  padding: 5px;
+}
+
+.border-top, .border-bottom {
+  width: 0;
+  height: @border-thickness;
+  background: @border-color;
+  position: absolute;
+  transition: all .3s ease;
+}
+
+/* Changing the left/right zero point will change where the transition starts from */
+.border-top { top: 0; left: 0; }
+.border-bottom { bottom: 0; right: 0; }
+.active .border-top,
+.active .border-bottom {
+  width: 100%;
+}
+
+.border-right, .border-left {
+  width: @border-thickness;
+  height: 0;
+  background: @border-color;
+  position: absolute;
+  transition: all .3s ease .3s;
+}
+/* a .3 second delay causes our right/left borders to draw after our top/bottom borders */
+
+
+/* Changing the top/bottom zero point will change where the transition starts from */
+.border-right { top: 0; right: 0; }
+.border-left { bottom: 0; left: 0; }
+.active .border-right,
+.active .border-left {
+  height: 100%;
+}
