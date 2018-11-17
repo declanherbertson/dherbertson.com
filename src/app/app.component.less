@@ -1,0 +1,30 @@
+.light-mode {
+  background: white;
+  color: black;
+}
+.dark-mode {
+  background: black !important;
+  color: white !important;
+}
+
+.application {
+  .light-mode();
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.nav-bar {
+  .light-mode();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-body {
+  .light-mode();
+  h1 {
+    text-align: center;
+  }
+}
