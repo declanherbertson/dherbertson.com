@@ -3,9 +3,6 @@
 .dark-mode-nav {
   .dark-mode();
   background: gray !important;
-  .border-bottom {
-    // border-bottom: white solid 1px !important;
-  }
 }
 
 .light-mode-nav {
@@ -14,6 +11,8 @@
 }
 
 .nav-bar {
+  position: relative;
+  border-radius: 5px;
   .light-mode-nav();
   font-size: calc(12px + .75vw);
   display: flex;
