@@ -1,5 +1,7 @@
+@transition-time: 350ms;
+
 .light-mode {
-  transition: background-color 350ms linear;
+  .background-color-transition();
   color: black;
   background: lightseagreen;
 }
@@ -10,6 +12,71 @@
 
 .routed-page {
   position: relative;
+  .display-flex();
+  .justify-content-center();
+}
+
+.display-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
   display: flex;
+}
+
+.align-items-center {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.align-content-center {
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.align-self-center {
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+.justify-content-center {
+  -webkit-justify-content: center;
   justify-content: center;
+}
+
+.justify-content-space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-direction-row {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.background-color-transition {
+  -moz-transition: background-color @transition-time linear;
+  -o-transition: background-color @transition-time linear;
+  -webkit-transition: background-color, @transition-time, linear;
+  transition: background-color @transition-time linear;
+
+}
+
+.tap-transparent {
+  -webkit-tap-highlight-color: rgba(0 ,0, 0, 0);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.toggle-transition {
+  transition: .4s;
+  -webkit-transition: .4s;
 }

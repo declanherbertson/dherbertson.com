@@ -1,11 +1,12 @@
+@import "../../styles";
 @scaleFactor: .4px;
 @textScale: 2;
 @textSize: calc(12px + @textScale * @scaleFactor);
 @slider-width: 30;
 
 .toggle-container {
-  display: flex;
-  align-items: center;
+  .display-flex();
+  .align-items-center();
 }
 .switch {
   position: relative;
@@ -30,8 +31,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: .4s;
-  transition: .4s;
+  .toggle-transition();
 }
 
 .slider:before {
@@ -41,8 +41,7 @@
   height: calc(@slider-width * @scaleFactor);
   width: calc(@slider-width * @scaleFactor);
   background-color: #2B244D;
-  -webkit-transition: .4s;
-  transition: .4s;
+  .toggle-transition();
 }
 
 input:checked + .slider {
