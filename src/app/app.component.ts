@@ -7,6 +7,7 @@ declare const particlesJS: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
+// todo add loading screen, maybe opacity change, likely need load service
 export class AppComponent implements OnInit {
   constructor(public darkMode: DarkModeService) {
   }
@@ -16,7 +17,6 @@ export class AppComponent implements OnInit {
   }
 
   private _initParticleBackground(): void {
-    console.log(particlesJS.load);
     particlesJS.load('background', 'assets/particleline.json');
   }
 }
