@@ -13,11 +13,14 @@
 }
 
 .application {
+  .display-flex();
+  .flex-direction-column();
+  min-height: 100vh;
   font-family: SansSerif, sans-serif;
-}
 
-.main-body {
-  .light-mode();
+  .inserted-content {
+    flex: 1;
+  }
 }
 
 .hide {
