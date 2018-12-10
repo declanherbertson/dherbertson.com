@@ -1,9 +1,35 @@
 @import "../../styles";
 .main {
-  // make into sticky footer -- look at flex box examples
   position: relative;
   .display-flex();
   .flex-direction-column();
   .justify-content-center();
   .align-items-center();
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .icons {
+    .display-flex();
+
+    .linkedin {
+      padding-right: 5px;
+      border-right: 1px solid;
+    }
+
+    .github {
+      margin-left: 5px;
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
 }
+
