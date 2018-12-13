@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Prod toggle
+/src/app/globalValues.ts
+
