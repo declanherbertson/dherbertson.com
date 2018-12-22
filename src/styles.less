@@ -5,6 +5,7 @@
   color: black;
   background: lightseagreen;
 }
+
 .dark-mode {
   color: white !important;
   background: darkslateblue !important;
@@ -70,10 +71,31 @@
 }
 
 .tap-transparent {
-  -webkit-tap-highlight-color: rgba(0 ,0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .toggle-transition {
   transition: .4s;
   -webkit-transition: .4s;
 }
+
+.screen-smaller-than(@width; @rules) {
+  @media screen and (max-width: @width) {
+    @rules();
+  }
+  @media screen and (max-device-width: @width) {
+    @rules();
+  }
+}
+
+.vertical-on-small-screens {
+  @width: 900px;
+  @media screen and (max-width: @width) {
+    .flex-direction-column();
+  }
+  @media screen and (max-device-width: @width) {
+    .flex-direction-column();
+  }
+}
+
+
