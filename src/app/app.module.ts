@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavBarOptionComponent } from './nav-bar/nav-bar-option/nav-bar-option.component';
 import { EntryComponent } from './entry/entry.component';
 import { FooterComponent } from './footer/footer.component';
+import {SkillComponent} from './about/skills/skill.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
     NavBarOptionComponent,
     EntryComponent,
     FooterComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

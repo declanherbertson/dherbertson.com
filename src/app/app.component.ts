@@ -8,6 +8,7 @@ declare const particlesJS: any;
   styleUrls: ['./app.component.less']
 })
 // todo add loading screen, maybe opacity change, likely need load service
+// todo create unified color scheme
 export class AppComponent implements OnInit {
   constructor(public darkMode: DarkModeService) {
   }
