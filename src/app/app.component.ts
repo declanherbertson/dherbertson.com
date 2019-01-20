@@ -9,6 +9,7 @@ declare const particlesJS: any;
 })
 // todo add loading screen, maybe opacity change, likely need load service
 // todo create unified color scheme
+// todo look into ios white screen on about refresh -- view encapsulation issue ???
 export class AppComponent implements OnInit {
   constructor(public darkMode: DarkModeService) {
   }
