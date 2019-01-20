@@ -1,7 +1,7 @@
 
 <div class="nav-bar" [ngClass]="{'dark-mode-nav': darkMode.darkModeEnabled}">
-  <app-nav-bar-option [content]="'About'" [path]="'/about'"></app-nav-bar-option>
-  <app-nav-bar-option [content]="'Projects'" [path]="'/projects'"></app-nav-bar-option>
-  <app-nav-bar-option [content]="'Experience'" [path]="'/experience'"></app-nav-bar-option>
+  <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.ABOUT)}" [content]="'About'" [path]="'/about'"></app-nav-bar-option>
+  <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.PROJECTS)}" [content]="'Projects'" [path]="'/projects'"></app-nav-bar-option>
+  <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.EXPERIENCE)}" [content]="'Experience'" [path]="'/experience'"></app-nav-bar-option>
   <app-mode-toggle class="mode-toggle"></app-mode-toggle>
 </div>
