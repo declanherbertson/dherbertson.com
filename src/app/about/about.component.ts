@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DarkModeService} from '../dark-mode.service';
 import {GlobalValues} from '../globalValues';
-import {Skill} from './skills/skill.component';
+import {PROFICIENT_LANGUAGES, Skill} from './skills/skill.component';
 
 @Component({
   selector: 'app-about',
@@ -10,10 +10,10 @@ import {Skill} from './skills/skill.component';
 })
 export class AboutComponent implements OnInit {
   public assetPath: string = GlobalValues.assetPath();
-  public testSkill: Skill = new Skill("Angular", "Proficient", "/angular-logo.png");
-  public testSkillList: Skill[] = [];
+  public testSkill: Skill = new Skill("Angular", 70, "/angular-logo.png", "https://angular.io/");
+  public testSkillList: Skill[] = PROFICIENT_LANGUAGES;
   constructor(public darkMode: DarkModeService) {
-    this.populateTestList();
+    // this.populateTestList();
   }
 
   ngOnInit() {

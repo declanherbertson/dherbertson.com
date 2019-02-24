@@ -7,6 +7,7 @@ declare const particlesJS: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
+// todo get about page proper
 // todo add loading screen, maybe opacity change, likely need load service
 // todo create unified color scheme
 // todo look into ios white screen on about refresh -- view encapsulation issue ???

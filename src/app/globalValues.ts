@@ -4,7 +4,7 @@ export enum Sections {
   PROJECTS = "Projects"
 }
 export class GlobalValues {
-  public static prod: boolean = true;
+  public static prod: boolean = false;
   public static assetPath(): string {
     return GlobalValues.prod ? "/me/assets" : "../../assets";
   }
