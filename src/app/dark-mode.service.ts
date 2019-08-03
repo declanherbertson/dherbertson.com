@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DarkModeService {
 
   constructor(){}
-  private _darkMode: boolean = false;
+  private _darkMode: boolean = true;
 
   public get darkModeEnabled(): boolean {
     return this._darkMode;
