@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GlobalValues} from '../../globalValues';
+import {DarkModeService} from "../../dark-mode.service";
 
 @Component({
   selector: 'app-skill',
@@ -9,7 +10,7 @@ import {GlobalValues} from '../../globalValues';
 export class SkillComponent implements OnInit {
   public assetPath: string = GlobalValues.assetPath();
   @Input() public skill: Skill;
-  constructor() {
+  constructor(public darkMode: DarkModeService) {
   }
 
   ngOnInit() {

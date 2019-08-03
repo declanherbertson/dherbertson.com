@@ -5,7 +5,11 @@
   .flex-direction-row();
   .align-items-center();
   .justify-content-center();
-  background: #ee7722;
+  background: @light-primary;
+
+  &.dark-mode {
+    background: @dark-primary;
+  }
 
   .name {
     padding: 10px;

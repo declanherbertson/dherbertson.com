@@ -1,5 +1,6 @@
 
-<div class="nav-bar" [ngClass]="{'dark-mode-nav': darkMode.darkModeEnabled}">
+<div class="nav-bar" [ngClass]="{'dark-mode': darkMode.darkModeEnabled}">
+  <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.HOME)}" [content]="'Home'" [path]="'/'"></app-nav-bar-option>
   <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.ABOUT)}" [content]="'About'" [path]="'/about'"></app-nav-bar-option>
   <app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.PROJECTS)}" [content]="'Projects'" [path]="'/projects'"></app-nav-bar-option>
   <!--<app-nav-bar-option [ngClass]="{'hide': hiddenSections.includes(sections.EXPERIENCE)}" [content]="'Experience'" [path]="'/experience'"></app-nav-bar-option>-->

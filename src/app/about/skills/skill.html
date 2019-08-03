@@ -1,4 +1,4 @@
-<a href="{{skill.webUrl}}" target="_blank" class="skill-container">
+<a href="{{skill.webUrl}}" target="_blank" class="skill-container" [ngClass]="{'dark-mode': darkMode.darkModeEnabled}">
   <img src="{{assetPath + skill.iconUrl}}">
   <div class="name">{{skill.name}}</div>
 </a>

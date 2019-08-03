@@ -1,11 +1,13 @@
+@import "../../../styles";
+
 @border-thickness: 2px;
-@border-color: #e72;
 
 .nav-option {
   margin: 10px 0 10px 0;
   outline: none;
   position: relative;
   border-radius: 5px;
+  background: none;
 
   &:hover {
     // make light and dark variants
@@ -22,9 +24,6 @@
 .border-top, .border-bottom {
   width: 0;
   height: @border-thickness;
-  background: @border-color;
-  position: absolute;
-  transition: all .3s ease;
 }
 
 /* Changing the left/right zero point will change where the transition starts from */
@@ -38,9 +37,18 @@
 .border-right, .border-left {
   width: @border-thickness;
   height: 0;
-  background: @border-color;
+}
+
+.border-right, .border-left, .border-top, .border-bottom {
+  background: @light-primary;
   position: absolute;
   transition: all .3s ease .3s;
+}
+
+.dark-mode {
+  .border-right, .border-left, .border-top, .border-bottom {
+  background: @dark-primary;
+  }
 }
 /* a .3 second delay causes our right/left borders to draw after our top/bottom borders */
 

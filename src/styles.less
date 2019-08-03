@@ -1,14 +1,20 @@
 @transition-time: 350ms;
+@light-background: #04C2C2;
+@dark-background: #635192;
+@light-primary: #1be6e6;
+@dark-primary: #432F75;
 
 .light-mode {
   .background-color-transition();
   color: black;
-  background: lightseagreen;
+  // background: lightseagreen;
+  background: @light-background;
 }
 
 .dark-mode {
   color: white !important;
-  background: darkslateblue !important;
+  // background: darkslateblue !important;
+  background: @dark-background;
 }
 
 .content {
