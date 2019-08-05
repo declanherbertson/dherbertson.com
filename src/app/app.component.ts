@@ -8,6 +8,7 @@ declare const particlesJS: any;
   styleUrls: ['./app.component.less']
 })
 // todo make header sticky
+// todo make about page fully consolified (content looks like in proper terminal windows)
 // todo get about page proper
 // todo add loading screen, maybe opacity change, likely need load service
 // todo create unified color scheme
