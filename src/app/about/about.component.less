@@ -5,6 +5,7 @@
   .flex-direction-column();
   .align-items-center();
   text-align: center;
+  font-size: 16px;
 
   .images {
     .vertical-on-small-screens();
@@ -26,21 +27,22 @@
 
   .title {
     font-weight: 500;
-    font-size: calc(12px + 3vw);
+    //font-size: calc(12px + 3vw);
+    font-size: 22px
   }
 
   .title::after {
   content: "";
   position: relative;
-  top: 8px;
-  right: 20px;
+  top: 3px;
+  right: 13px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: inline-block;
-  background-color: white;
+  background-color: black;
   vertical-align: top;
   width: 10px;
   /* Set height to the line height of .text */
-  height: 32px;
+  height: 28px;
   /*
   Animation paramaters:
   blink = animation-name,
@@ -80,6 +82,9 @@
 
   &.dark-mode {
     background: none;
+    .title::after {
+      background-color: white;
+    }
     .about, .skills {
       .content-background-dark();
     }
