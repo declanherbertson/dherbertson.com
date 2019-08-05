@@ -29,12 +29,60 @@
     font-size: calc(12px + 3vw);
   }
 
-  .about {
-    font-size: calc(16px + 1vw);
-    line-height: 1.5em;
-    max-width: 1200px;
-    font-weight: 500;
-    margin: 10px;
+  .title::after {
+  content: "";
+  position: relative;
+  top: 8px;
+  right: 20px;
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: inline-block;
+  background-color: white;
+  vertical-align: top;
+  width: 10px;
+  /* Set height to the line height of .text */
+  height: 32px;
+  /*
+  Animation paramaters:
+  blink = animation-name,
+  1s = animation-duration,
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+  .about, .skills {
+    //font-size: calc(16px + 1vw);
+    //line-height: 1.5em;
+    //max-width: 1200px;
+    //font-weight: 500;
+    //margin: 10px;
+    .content-background();
+  }
+
+  .skills {
+    padding-top: 5%;
+    margin-top: 5%;
+  }
+
+  &.dark-mode {
+    background: none;
+    .about, .skills {
+      .content-background-dark();
+    }
   }
 
   .skills-list {
