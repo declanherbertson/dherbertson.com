@@ -13,6 +13,7 @@ import { NavBarOptionComponent } from './nav-bar/nav-bar-option/nav-bar-option.c
 import { EntryComponent } from './entry/entry.component';
 import { FooterComponent } from './footer/footer.component';
 import {SkillComponent} from './about/skills/skill.component';
+import { StyleDotsComponent } from './style-dots/style-dots.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {SkillComponent} from './about/skills/skill.component';
     NavBarOptionComponent,
     EntryComponent,
     FooterComponent,
-    SkillComponent
+    SkillComponent,
+    StyleDotsComponent
   ],
   imports: [
     BrowserModule,

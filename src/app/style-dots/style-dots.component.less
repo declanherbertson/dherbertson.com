@@ -1,0 +1,31 @@
+@import "../../styles";
+@dot-size: 13px;
+.dots {
+  position: absolute;
+  top: -14px;
+  left: 5px;
+  .display-flex();
+  .flex-direction-row();
+
+  .dot {
+    width: @dot-size;
+    height: @dot-size;
+    border-radius: 50%;
+
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .green {
+    background-color: green;
+  }
+}

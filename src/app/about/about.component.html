@@ -1,32 +1,64 @@
 <div class="main dark-mode" [ngClass]="{'dark-mode': darkMode.darkModeEnabled}">
   <h2 class="title">"Hello World! I'm Declan" </h2>
   <!--<div class="images">-->
-    <!--&lt;!&ndash;todo maybe make profile pic background transparent&ndash;&gt;-->
-    <!--<img src="{{assetPath + '/transparent-headshot.png'}}" width="200" height="200">-->
-    <!--<h1>X</h1>-->
-    <!--<img src="{{assetPath + '/ubc_logo.png'}}" width="150" height="218">-->
+  <!--&lt;!&ndash;todo maybe make profile pic background transparent&ndash;&gt;-->
+  <!--<img src="{{assetPath + '/transparent-headshot.png'}}" width="200" height="200">-->
+  <!--<h1>X</h1>-->
+  <!--<img src="{{assetPath + '/ubc_logo.png'}}" width="150" height="218">-->
   <!--</div>-->
-  <div class="about">
-    I am a Computer Engineering student with an interest in software development.
-    I am constantly learning about the practices and technologies used in this industry through Internships,
-    Hackathons, and Personal Projects
-  </div>
-  <div class="skills">
-    <div class="languages">
-      <h3>Languages</h3>
-
-      <h4>Proficient</h4>
-      <div class="skills-list">
-        <app-skill *ngFor="let skill of testSkillList" [skill]="skill"></app-skill>
+  <div class="content-container">
+    <div class="content about rel">
+      <app-style-dots></app-style-dots>
+      <div class="content-body">
+        > const me = {{ '{' }} <br>
+        ... name: 'Declan Herbertson', <br>
+        ... location: 'Vancouver, BC', <br>
+        ... education: 'University of British Columbia', <br>
+        ... major: 'Computer Science', <br>
+        ... expectedGraduation: 'May 2022', <br>
+        ... hobbies: [ 'Basketball', 'Hackathons', 'Reading' ] <br>
+        {{ '}' }} <br>
+        => undefined
       </div>
-
-      <h4>Working Knowledge</h4>
-      <div class="skills-list">
-        <app-skill *ngFor="let skill of testSkillList" [skill]="skill"></app-skill>
-      </div>
-
     </div>
+    <!--  <div class="skills rel">-->
+    <!--    <app-style-dots></app-style-dots>-->
+    <!--    <div class="languages">-->
+    <!--      <h3>Languages</h3>-->
 
+    <!--      <h4>Proficient</h4>-->
+    <!--      <div class="skills-list">-->
+    <!--        <app-skill *ngFor="let skill of testSkillList" [skill]="skill"></app-skill>-->
+    <!--      </div>-->
+
+    <!--      <h4>Working Knowledge</h4>-->
+    <!--      <div class="skills-list">-->
+    <!--        <app-skill *ngFor="let skill of testSkillList" [skill]="skill"></app-skill>-->
+    <!--      </div>-->
+
+    <!--    </div>-->
+
+    <!--  </div>-->
+    <div class="content experience rel">
+      <app-style-dots></app-style-dots>
+      <div class="content-body">
+        > experience(me); <br>
+        => {{ '{' }} <br>
+        ... workExperience {{ '{' }} <br>
+        ...... {{ '{' }} <br>
+        ......... company: 'Dialpad', <br>
+        ......... title: 'Software Engineer, Intern', <br>
+        ......... startDate: 'May 2019', <br>
+        ......... endDate: 'Sept 2019', <br>
+        ...... {{ '}' }} <br>
+        ...... {{ '{' }} <br>
+        ......... company: 'Visier', <br>
+        ......... title: 'Software Developer, Co-op', <br>
+        ......... startDate: 'Apr 2018', <br>
+        ......... endDate: 'Dec 2018', <br>
+        ...... {{ '}' }} <br>
+        ... {{ '}' }} <br>
+      </div>
+    </div>
   </div>
-  <!--todo maybe add skills section of bullet points or list entries-->
 </div>

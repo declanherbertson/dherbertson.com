@@ -4,7 +4,8 @@
   .content();
   .flex-direction-column();
   .align-items-center();
-  text-align: center;
+  //text-align: center;
+  line-height: 1.5;
   font-size: 16px;
 
   .images {
@@ -26,6 +27,8 @@
   }
 
   .title {
+    position: relative;
+    text-align: center;
     font-weight: 500;
     //font-size: calc(12px + 3vw);
     font-size: 22px
@@ -34,7 +37,7 @@
   .title::after {
   content: "";
   position: relative;
-  top: 0;
+  top: 2px;
   right: 13px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: inline-block;
@@ -66,13 +69,17 @@
   100% { opacity: 1.0; }
 }
 
-  .about, .skills {
+  .about, .skills, .experience {
     //font-size: calc(16px + 1vw);
     //line-height: 1.5em;
     //max-width: 1200px;
     //font-weight: 500;
     //margin: 10px;
     .content-background();
+  }
+
+  .content {
+    margin: 5%;
   }
 
   .skills {
@@ -85,7 +92,7 @@
     .title::after {
       background-color: white;
     }
-    .about, .skills {
+    .about, .skills, .experience {
       .content-background-dark();
     }
   }
