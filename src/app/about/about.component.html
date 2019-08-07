@@ -7,7 +7,7 @@
   <!--<img src="{{assetPath + '/ubc_logo.png'}}" width="150" height="218">-->
   <!--</div>-->
   <div class="content-container">
-    <div class="content about rel">
+    <div class="content-shell rel">
       <app-style-dots></app-style-dots>
       <div class="content-body">
         > const me = {{ '{' }} <br>
@@ -39,12 +39,12 @@
     <!--    </div>-->
 
     <!--  </div>-->
-    <div class="content experience rel">
+    <div class="content-shell rel">
       <app-style-dots></app-style-dots>
       <div class="content-body">
         > experience(me); <br>
         => {{ '{' }} <br>
-        ... workExperience {{ '{' }} <br>
+        ... workExperience: {{ '{' }} <br>
         ...... {{ '{' }} <br>
         ......... company: 'Dialpad', <br>
         ......... title: 'Software Engineer, Intern', <br>
@@ -57,6 +57,29 @@
         ......... startDate: 'Apr 2018', <br>
         ......... endDate: 'Dec 2018', <br>
         ...... {{ '}' }} <br>
+        ... {{ '}' }} <br>
+      </div>
+    </div>
+
+    <div class="content-shell rel">
+      <app-style-dots></app-style-dots>
+      <div class="content-body">
+        > skills(me); <br>
+        => {{ '{' }} <br>
+        ... languages: [ <br>
+        ...... {{ '{' }} javaScript/typeScript: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} python: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} html/css: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} java: 'Basic' {{ '}' }},<br>
+        ...... {{ '{' }} less: 'Basic' {{ '}' }},<br>
+        ...... ], <br>
+        ... technologies: [ <br>
+        ...... {{ '{' }} git: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} angular: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} vue: 'Proficient' {{ '}' }},<br>
+        ...... {{ '{' }} googleAppEngine: 'Basic' {{ '}' }},<br>
+        ...... {{ '{' }} linux: 'Basic' {{ '}' }},<br>
+        ...... ], <br>
         ... {{ '}' }} <br>
       </div>
     </div>
