@@ -103,6 +103,7 @@
   .flex-wrap();
   .justify-content-center();
   .align-items-center();
+  .left-align-small-screen();
 }
 
 .content-shell {
@@ -143,6 +144,16 @@
   }
   @media screen and (max-device-width: @width) {
     .flex-direction-column();
+  }
+}
+
+.left-align-small-screen {
+  @max-width: 600px;
+  @media screen and (max-width: @max-width) {
+    font-size: 11px;
+  }
+  @media screen and (max-device-width: @max-width){
+    font-size: 11px;
   }
 }
 
