@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {DarkModeService} from '../dark-mode.service';
 import {GlobalValues} from '../globalValues';
 import {PROFICIENT_LANGUAGES, Skill} from './skills/skill.component';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-about',
@@ -17,6 +18,16 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit() {
+    const options: any = {
+      strings: ["Hello World! I'm Declan", "I am a Junior Computer Science Student"],
+      typeSpeed: 75,
+      backSpeed: 100,
+      startDelay: 1500,
+      backDelay: 1500,
+      smartBackspace: true,
+      showCursor: false,
+    };
+    const typed: Typed = new Typed(".title", options);
   }
 
   private populateTestList(): void {
