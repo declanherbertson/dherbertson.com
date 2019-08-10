@@ -18,16 +18,32 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit() {
+    const options1: any = {
+      strings: [
+              "Hello World!^500 I'm Declan",
+              "I am Junior Computer Science student at UBC",
+              "I enjoy tinkering with new technologies and learning new things",
+              "I look forward to talking with you more"
+            ],
+            typeSpeed: 50,
+            loop: false,
+            startDelay: 1200,
+            backSpeed: 25,
+            backDelay: 1200,
+            showCursor: false,
+            contentType: 'html',
+    };
     const options: any = {
       strings: ["Hello World! I'm Declan", "I am a Junior Computer Science Student"],
-      typeSpeed: 75,
-      backSpeed: 100,
+      typeSpeed: 70,
+      backSpeed: 70,
       startDelay: 1500,
       backDelay: 1500,
       smartBackspace: true,
       showCursor: false,
+      loop: true,
     };
-    const typed: Typed = new Typed(".title", options);
+    const typed: Typed = new Typed(".title", options1);
   }
 
   private populateTestList(): void {
