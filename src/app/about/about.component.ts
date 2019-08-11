@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
       strings: [
               "Hello World!^500 I'm Declan",
               "I am Junior Computer Science student at UBC",
-              "I enjoy tinkering with new technologies and learning new things",
+              "I enjoy tinkering with technologies and learning new things",
               "I look forward to talking with you more"
             ],
             typeSpeed: 50,
@@ -35,7 +35,7 @@ export class AboutComponent implements OnInit {
     };
     const options: any = {
       strings: ["Hello World! I'm Declan", "I am a Junior Computer Science Student"],
-      typeSpeed: 70,
+      typeSpeed: 90,
       backSpeed: 70,
       startDelay: 1500,
       backDelay: 1500,
