@@ -21,9 +21,9 @@ export class AboutComponent implements OnInit {
     const options1: any = {
       strings: [
               "Hello World!^500 I'm Declan",
-              "I am Junior Computer Science student at UBC",
-              "I enjoy tinkering with technologies and learning new things",
-              "I look forward to talking with you more"
+              "I am junior Computer Science student at UBC",
+              "I enjoy tinkering and learning new things",
+              "I look forward to talking with you more!"
             ],
             typeSpeed: 50,
             loop: false,
