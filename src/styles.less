@@ -4,6 +4,14 @@
 @light-primary: #1be6e6;
 @dark-primary: #432F75;
 
+// Apple green-dark is used against dark header for dark mode while mine is light header for dark mode
+@green: rgb(52, 199, 89);
+@green-dark: rgb(48, 209, 88);
+@yellow: rgb(255, 204, 0);
+@yellow-dark: rgb(255, 214, 10);
+@red: rgb(255, 59, 48);
+@red-dark: rgb(255, 69, 58);
+
 .page-content {
   margin-top: 50px;
 }
@@ -18,10 +26,35 @@
   background: @light-background;
 }
 
+.red {
+    background-color: @red-dark;
+  }
+
+  .yellow {
+    background-color: @yellow-dark;
+  }
+
+  .green {
+    background-color: @green-dark;
+  }
+
+
 .dark-mode {
   color: white !important;
   // background: darkslateblue !important;
   background: @dark-background;
+
+  .red {
+    background-color: @red!important;
+  }
+
+  .yellow {
+    background-color: @yellow!important;
+  }
+
+  .green {
+    background-color: @green!important;
+  }
 }
 
 .content {
