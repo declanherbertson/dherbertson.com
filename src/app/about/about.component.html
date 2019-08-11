@@ -11,12 +11,12 @@
       <app-style-dots></app-style-dots>
       <div class="content-body">
         > const me = {{ '{' }} <br>
-        ... name: 'Declan Herbertson', <br>
-        ... location: 'Vancouver, BC', <br>
-        ... education: <span class="a">'</span><a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a><span class="a">'</span>, <br>
-        ... major: <span class="important-info">'Computer Science'</span>, <br>
-        ... expectedGraduation: 'May 2022', <br>
-        ... hobbies: [ 'Basketball', 'Hackathons', 'Reading' ] <br>
+        ... <span class="var"> name</span>: 'Declan Herbertson', <br>
+        ... <span class="var"> location</span>: 'Vancouver, BC', <br>
+        ... <span class="var"> education</span>: <span class="a">'</span><a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a><span class="a">'</span>, <br>
+        ... <span class="var"> major</span>: <span class="important-info">'Computer Science'</span>, <br>
+        ... <span class="var"> expectedGraduation</span>: 'May 2022', <br>
+        ... <span class="var"> hobbies</span>: [ 'Basketball', 'Hackathons', 'Reading' ] <br>
         {{ '}' }} <br>
         => undefined
       </div>
@@ -44,18 +44,18 @@
       <div class="content-body">
         > experience(me); <br>
         => {{ '{' }} <br>
-        ... workExperience: {{ '{' }} <br>
+        ... <span class="var"> workExperience</span>: {{ '{' }} <br>
         ...... {{ '{' }} <br>
-        ......... company: <span class="a">'</span><a target="_blank" href="https://www.dialpad.com/">Dialpad</a><span class="a">'</span>, <br>
-        ......... title: <span class="important-info">'Software Engineer, Intern'</span>, <br>
-        ......... startDate: 'May 2019', <br>
-        ......... endDate: 'Sept 2019', <br>
+        ......... <span class="var"> company</span>: <span class="a">'</span><a target="_blank" href="https://www.dialpad.com/">Dialpad</a><span class="a">'</span>, <br>
+        ......... <span class="var"> title</span>: <span class="important-info">'Software Engineer, Intern'</span>, <br>
+        ......... <span class="var"> startDate</span>: 'May 2019', <br>
+        ......... <span class="var"> endDate</span>: 'Sept 2019', <br>
         ...... {{ '}' }} <br>
         ...... {{ '{' }} <br>
-        ......... company: <span class="a">'</span><a target="_blank" href="https://www.visier.com/">Visier</a><span class="a">'</span>, <br>
-        ......... title: <span class="important-info">'Software Developer, Co-op'</span>, <br>
-        ......... startDate: 'Apr 2018', <br>
-        ......... endDate: 'Dec 2018', <br>
+        ......... <span class="var"> company</span>: <span class="a">'</span><a target="_blank" href="https://www.visier.com/">Visier</a><span class="a">'</span>, <br>
+        ......... <span class="var"> title</span>: <span class="important-info">'Software Developer, Co-op'</span>, <br>
+        ......... <span class="var"> startDate</span>: 'Apr 2018', <br>
+        ......... <span class="var"> endDate</span>: 'Dec 2018', <br>
         ...... {{ '}' }} <br>
         ... {{ '}' }} <br>
       </div>
@@ -66,7 +66,7 @@
       <div class="content-body">
         > skills(me); <br>
         => {{ '{' }} <br>
-        ... languages: [ <br>
+        ... <span class="var"> languages</span>: [ <br>
         ...... {{ '{' }} <a target="_blank" href="https://www.javascript.com">javaScript</a>/<a target="_blank" href="https://www.typescriptlang.org/">typeScript</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
         ...... {{ '{' }} <a target="_blank" href="https://www.python.org/">python</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
         ...... {{ '{' }} <a target="_blank" href="https://www.w3.org/html/">html</a>/<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
@@ -74,7 +74,7 @@
         ...... {{ '{' }} <a target="_blank" href="https://www.scala-lang.org/">scala</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
         ...... {{ '{' }} <a target="_blank" href="http://lesscss.org/">less</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
         ...... ], <br>
-        ... technologies: [ <br>
+        ... <span class="var"> technologies</span>: [ <br>
         ...... {{ '{' }} <a target="_blank" href="https://git-scm.com/">git</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
         ...... {{ '{' }} <a target="_blank" href="https://angular.io/">angular</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
         ...... {{ '{' }} <a target="_blank" href="https://vuejs.org/">vue</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
