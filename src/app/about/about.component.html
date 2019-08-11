@@ -13,8 +13,8 @@
         > const me = {{ '{' }} <br>
         ... name: 'Declan Herbertson', <br>
         ... location: 'Vancouver, BC', <br>
-        ... education: '<a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>', <br>
-        ... major: 'Computer Science', <br>
+        ... education: <span class="a">'</span><a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a><span class="a">'</span>, <br>
+        ... major: <span class="important-info">'Computer Science'</span>, <br>
         ... expectedGraduation: 'May 2022', <br>
         ... hobbies: [ 'Basketball', 'Hackathons', 'Reading' ] <br>
         {{ '}' }} <br>
@@ -46,14 +46,14 @@
         => {{ '{' }} <br>
         ... workExperience: {{ '{' }} <br>
         ...... {{ '{' }} <br>
-        ......... company: '<a target="_blank" href="https://www.dialpad.com/">Dialpad</a>', <br>
-        ......... title: 'Software Engineer, Intern', <br>
+        ......... company: <span class="a">'</span><a target="_blank" href="https://www.dialpad.com/">Dialpad</a><span class="a">'</span>, <br>
+        ......... title: <span class="important-info">'Software Engineer, Intern'</span>, <br>
         ......... startDate: 'May 2019', <br>
         ......... endDate: 'Sept 2019', <br>
         ...... {{ '}' }} <br>
         ...... {{ '{' }} <br>
-        ......... company: '<a target="_blank" href="https://www.visier.com/">Visier</a>', <br>
-        ......... title: 'Software Developer, Co-op', <br>
+        ......... company: <span class="a">'</span><a target="_blank" href="https://www.visier.com/">Visier</a><span class="a">'</span>, <br>
+        ......... title: <span class="important-info">'Software Developer, Co-op'</span>, <br>
         ......... startDate: 'Apr 2018', <br>
         ......... endDate: 'Dec 2018', <br>
         ...... {{ '}' }} <br>
@@ -67,19 +67,19 @@
         > skills(me); <br>
         => {{ '{' }} <br>
         ... languages: [ <br>
-        ...... {{ '{' }} <a target="_blank" href="https://www.javascript.com">javaScript</a>/<a target="_blank" href="https://www.typescriptlang.org/">typeScript</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://www.python.org/">python</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://www.w3.org/html/">html</a>/<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://www.oracle.com/java/">java</a>: 'Basic' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://www.scala-lang.org/">scala</a>: 'Basic' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="http://lesscss.org/">less</a>: 'Basic' {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://www.javascript.com">javaScript</a>/<a target="_blank" href="https://www.typescriptlang.org/">typeScript</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://www.python.org/">python</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://www.w3.org/html/">html</a>/<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://www.oracle.com/java/">java</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://www.scala-lang.org/">scala</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="http://lesscss.org/">less</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
         ...... ], <br>
         ... technologies: [ <br>
-        ...... {{ '{' }} <a target="_blank" href="https://git-scm.com/">git</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://angular.io/">angular</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://vuejs.org/">vue</a>: 'Proficient' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://cloud.google.com/appengine/">googleAppEngine</a>: 'Basic' {{ '}' }},<br>
-        ...... {{ '{' }} <a target="_blank" href="https://en.wikipedia.org/wiki/Linux">linux</a>: 'Basic' {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://git-scm.com/">git</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://angular.io/">angular</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://vuejs.org/">vue</a>: <span class="skill-level">'Proficient'</span> {{ '}' }},<br>
+        ...... {{ '{' }} <a target="_blank" href="https://cloud.google.com/appengine/">googleAppEngine</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
+                          ...... {{ '{' }} <a target="_blank" href="https://en.wikipedia.org/wiki/Linux">linux</a>: <span class="skill-level">'Basic'</span> {{ '}' }},<br>
         ...... ], <br>
         ... {{ '}' }} <br>
       </div>

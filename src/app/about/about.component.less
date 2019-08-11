@@ -9,12 +9,37 @@
   font-size: 16px;
 
   &.dark-mode {
-    a {
+    .content-body {
+      color: #1be6e6;
+    }
+    .console-text {
       color: white;
     }
+    .a, a {
+      color: @green;
+    }
+    .important-info {
+      color: @red-light;
+    }
+    .skill-level {
+      color: @yellow;
+    }
   }
-  a {
+  .content-body {
+    color: @dark-blue;
+  }
+  .a, a {
     text-decoration: none;
+    color: @green-super-dark;
+  }
+  .important-info {
+    color: @red-dark;
+  }
+  .skill-level {
+    color: @yellow-super-dark;
+  }
+
+  .console-text {
     color: black;
   }
 
