@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     const options1: any = {
       strings: [
               "Hello World!^500 I'm Declan",
-              "I am junior Computer Science student at UBC",
+              "I am a Computer Science student at UBC",
               "I enjoy tinkering and learning new things",
               "I look forward to talking with you more!"
             ],
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
             contentType: 'html',
     };
     const options: any = {
-      strings: ["Hello World! I'm Declan", "I am a Junior Computer Science Student"],
+      strings: ["Hello World! I'm Declan", "I am a Computer Science Student"],
       typeSpeed: 90,
       backSpeed: 70,
       startDelay: 1500,
